@@ -1,0 +1,8 @@
+{
+    "cSpell.words": [
+        "wvdp"
+    ],
+    "search.exclude": {
+        "dist/**/*": true
+    }
+}
