@@ -3,8 +3,9 @@
 import axiosOverHttp from '../client/client';
 
 (async () => {
-    const response = await axiosOverHttp(
-        'http://localhost:3000/axios',
+    const axios = axiosOverHttp('http://localhost:3000/axios');
+
+    const response = await axios(
         {
             url: 'https://baconipsum.com/api/?type=meat-and-filler',
             method: 'get'

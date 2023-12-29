@@ -23,14 +23,14 @@ we have implemented a router that is plug and play, so you only need to add it t
 the url is configurable, but the default is `/axios`.
 
 ```js
-import express from 'express'
-import { axiosOverHttpEndpoint } from 'axios-over-http'
+import express from 'express';
+import axiosOverHttpEndpoint from 'axios-over-http/dist/server/server.js';
 
-const app = express()
+const app = express();
 
 app.use('/axios', axiosOverHttpEndpoint);
 
-app.listen(3000)
+app.listen(3000);
 ```
 
 client side:
@@ -41,10 +41,8 @@ we currently only support the config style of axios. (dedicated get, post, etc. 
 the first argument is the url of the server, the second is the full featured axios config object.
 
 ```js
-import axiosOverHttp from 'axios-over-http'
-
-const response = await axiosOverHttp(
-    'http://localhost:3000/axios',
+const axios = axiosOverHttp('http://localhost:3000/axios');
+const response = await axios(
     {
         method: 'get',
         url: 'https://example.com',

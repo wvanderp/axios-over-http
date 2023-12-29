@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "run a axios connection over http proxy",
   "main": "dist",
+  "type": "module",
   "keywords": [
     "axios",
     "proxy"
