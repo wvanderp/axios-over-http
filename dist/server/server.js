@@ -28,12 +28,9 @@ async function axiosOverHttpEndpoint(req, res) {
         });
     }
     catch (error) {
-        // @ts-expect-error
-        if (error.isAxiosError) {
+        if (axios_1.default.isAxiosError(error)) {
             res.send({
-                // @ts-expect-error
                 config: error.config,
-                // @ts-expect-error
                 code: error.code,
             });
             return;

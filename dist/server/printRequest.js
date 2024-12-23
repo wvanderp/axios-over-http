@@ -1,13 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = printRequest;
 /**
  * this function prints the request to the console
  *
- * @param req the express request object
+ * @param {Request} req - the express request object
  * @example
+ * printRequest(req);
  */
 function printRequest(req) {
-    // the time
     console.log(new Date().toISOString());
     console.log({
         body: req.body,
@@ -16,4 +17,3 @@ function printRequest(req) {
         url: req.url,
     });
 }
-exports.default = printRequest;

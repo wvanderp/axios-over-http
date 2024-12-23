@@ -3,6 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = axiosOverHttp;
 const axios_1 = __importDefault(require("axios"));
 /**
  * a partial axios client that sends the axios config to a server for the server to make the request
@@ -28,4 +29,3 @@ function axiosOverHttp(serverUrl) {
         return response.data;
     };
 }
-exports.default = axiosOverHttp;
