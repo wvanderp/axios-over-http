@@ -42,3 +42,4 @@ const router = express_1.default.Router();
 router.use(express_1.default.json());
 router.post('/', axiosOverHttpEndpoint);
 exports.default = router;
+//# sourceMappingURL=server.js.map

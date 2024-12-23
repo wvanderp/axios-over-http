@@ -14,3 +14,4 @@ const client_1 = __importDefault(require("../client/client"));
     });
     console.log(response);
 })();
+//# sourceMappingURL=testClient.js.map
